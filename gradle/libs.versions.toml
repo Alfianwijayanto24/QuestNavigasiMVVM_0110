@@ -10,6 +10,8 @@ kotlin = "2.2.10"
 composeBom = "2026.02.01"
 #tambah kan navigasi
 navigation = "2.9.3"
+navigationRuntimeKtx = "2.10.2"
+navigationCompose = "2.10.2"
 
 
 [libraries]
@@ -30,6 +32,8 @@ androidx-compose-material3 = { group = "androidx.compose.material3", name = "mat
 
 #tambah kan lib Navigation
 androidx-navigation-compose = {module = "androidx.navigation:navigation-common",version.ref = "navigation"}
+androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
+navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
