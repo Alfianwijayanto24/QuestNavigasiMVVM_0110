@@ -20,4 +20,26 @@ fun DataApp(
     NavHost(
         navController = navController,
         startDestination = Navigasi.FormulirSaya.name
+    ) {
+        composable(
+            route = Navigasi.FormulirSaya.name
+        ) {
+            FormIsian(
+                // PERBAIKAN: Mengubah huruf depan menjadi 'o' kecil (onSubmitBtnClick)
+                onSubmitBtnClick = {
+                    navController.navigate(Navigasi.Detail.name)
+                }
+            )
+        }
+
+
+
+private fun cancelAndBackToFormulir(
+    navController: NavHostController
+) {
+    navController.popBackStack(
+        Navigasi.FormulirSaya.name,
+        inclusive = false
     )
+}
+
