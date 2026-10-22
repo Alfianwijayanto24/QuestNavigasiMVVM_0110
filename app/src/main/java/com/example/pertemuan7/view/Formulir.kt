@@ -68,3 +68,16 @@ fun FormIsian(
                 thickness = DividerDefaults.Thickness,
                 color = Color.Red
             )
+            Row{
+                jenisK.forEach { item ->
+                    Row(verticalAlignment = Alignment.CenterVertically){
+                        RadioButton(
+                            selected = false,
+                            onClick = {}
+                        )
+                        Text(text = item)
+                    }
+                }
+            }
+
+
