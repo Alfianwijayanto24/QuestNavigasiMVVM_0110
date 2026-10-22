@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pertemuan 7</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="nama_lengkap">Nama_Lengkap</string>
+    <string name="jenis_kelamin">JENIS KELAMIN</string>
+    <string name="alamat">ALAMAT</string>
+    <string name="tampilan">TAMPILAN Data</string>
+    <string name="home">From Isian</string>
+</resources>
